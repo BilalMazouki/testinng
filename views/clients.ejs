@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clients</title>
+</head>
+<body>
+    <div class="user">
+        <% for (let user of allusers) { %>
+            <hr>
+            <h1>Hello <%= user.name %>, you are <%= user.age %> years old.</h1>
+            
+            <% if (user.nurd) { %>
+                <h1>You are a nerd.</h1>
+            <% } else { %>
+                <h1>You are not a nerd.</h1>
+            <% } %>
+            <hr>
+        <% } %>
+    </div>
+</body>
+</html>
